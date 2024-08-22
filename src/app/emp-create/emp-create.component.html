@@ -1,0 +1,136 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-container h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  input[readonly] {
+    background-color: #f9f9f9;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #007BFF;
+    /* Blue border */
+    border-radius: 5px;
+    background-color: #007BFF;
+    /* Blue background */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  .back-button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    border-color: #0056b3;
+  }
+
+  .back-button:active {
+    background-color: #004494;
+    /* Even darker blue on click */
+    border-color: #004494;
+  }
+
+  .submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #28a745;
+    /* Green border */
+    border-radius: 5px;
+    background-color: #28a745;
+    /* Green background */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  .submit-button:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+    border-color: #1e7e34;
+  }
+
+  .submit-button:active {
+    background-color: #1e7e34;
+    /* Even darker green on click */
+    border-color: #1c7430;
+  }
+</style>
+<p>emp-create works!</p>
+
+<div class="form-container">
+  <h2>Create Employee</h2>
+
+  <form>
+    <label for="emp-id">Employee ID:</label>
+    <input type="text" id="emp-id" name="emp-id" >
+
+    <label for="emp-name">Name:</label>
+    <input type="text" id="emp-name" name="emp-name" placeholder="Enter a name">
+
+    <label for="emp-address">Address:</label>
+    <input type="text" id="emp-address" name="emp-address" placeholder="Enter an address">
+
+    <label for="emp-contact">Contact Number:</label>
+    <input type="text" id="emp-contact" name="emp-contact" placeholder="09XXXXXXXXX">
+
+    <label for="emp-email">Email:</label>
+    <input type="email" id="emp-email" name="emp-email" placeholder="Enter an email address">
+
+    <div class="button-container">
+      <a href="" class="back-button">Back</a>
+      <button type="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+  
+</div>

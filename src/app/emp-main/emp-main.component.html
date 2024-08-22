@@ -1,0 +1,196 @@
+<p>emp-main works!</p>
+
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .info-box {
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    /* Center buttons horizontally */
+    gap: 10px;
+    /* Space between buttons */
+    margin: 20px auto;
+  }
+
+  .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  .button-link.create {
+    background-color: #28a745;
+    /* Green */
+    border-color: #28a745;
+  }
+
+  .button-link.create:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+
+  .button-link.create:active {
+    background-color: #1e7e34;
+    border-color: #1c7430;
+  }
+
+  .button-link.edit {
+    background-color: #ffc107;
+    /* Yellow */
+    border-color: #ffc107;
+    color: black;
+  }
+
+  .button-link.edit:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+  }
+
+  .button-link.edit:active {
+    background-color: #d39e00;
+    border-color: #c69500;
+  }
+
+  .button-link.delete {
+    background-color: #dc3545;
+    /* Red */
+    border-color: #dc3545;
+  }
+
+  .button-link.delete:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+
+  .button-link.delete:active {
+    background-color: #bd2130;
+    border-color: #b21f2d;
+  }
+
+  .table-container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* Center horizontally */
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  p {
+    margin: 0;
+  }
+</style>
+
+<div class="container">
+  <h2>Manage Employee</h2>
+</div>
+
+<div class="container">
+  <div class="info-box">
+    <p><b>Name:</b> Lianne Francheska S. Deldacan</p>
+    <p><b>Section:</b> BM3</p>
+    <p><b>Subject:</b> ITS181-2 Application Development 2</p>
+  </div>
+</div>
+
+<div class="container button-container">
+  <a href="create" class="button-link create">Create</a>
+  <a href="edit" class="button-link edit">Edit</a>
+  <a href="delete" class="button-link delete">Delete</a>
+</div>
+
+<div class="container table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Contact Number</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Juan Dela Cruz</td>
+        <td>123 Rizal St., Manila, Philippines</td>
+        <td>09123456789</td>
+        <td>juan.delacruz@example.com</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Maria Clara</td>
+        <td>456 Bonifacio Ave., Quezon City, Philippines</td>
+        <td>09187654321</td>
+        <td>maria.clara@example.com</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>John Mabini</td>
+        <td>789 Mabini St., Davao City, Philippines</td>
+        <td>09123451234</td>
+        <td>jose.mabini@example.com</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Anna Rivera</td>
+        <td>321 Aguinaldo St., Cebu City, Philippines</td>
+        <td>09187651234</td>
+        <td>anna.rivera@example.com</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Jonathan Lopez</td>
+        <td>654 Del Pilar St., Iloilo City, Philippines</td>
+        <td>09123459876</td>
+        <td>jonathan.lopez@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
